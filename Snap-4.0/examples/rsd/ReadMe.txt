@@ -1,5 +1,5 @@
 ========================================================================
-    Time Cascades
+    Rumor Source Detection RSD
 ========================================================================
 The application implements:
    -an infected directed graph using Independent Cascade and record infected 
@@ -12,6 +12,9 @@ For more details and motivation what this code is trying to achive see
 J. Kleinberg, E. Tardos, 2003.
 “Rumor Source Identification in Social Networks with Time-varying Topology” by
 J. Jiang, S. Wen, S. Yu, Y. Xiang, W. Zhou, 2015.
+“Approximating the k-Minimum Distance Rumor Source Detection in Online Social Networks” by
+S. Lim, J. Hao, Z. Lu, X. Zhang, Z. Zhang, 2018.
+
 
 The code works under Windows with Visual Studio or Cygwin with GCC,
 Mac OS X, Linux and other Unix variants with GCC. Make sure that a
@@ -21,9 +24,8 @@ and makefiles are provided. For makefiles, compile the code with
 
 /////////////////////////////////////////////////////////////////////////////
 Input files:
-   -bigtest1.txt
-   -bigtest2.txt
-   -mytest_sample.txt
+   -CollegeMsg.txt
+   -email-Eu-core.txt
 
 /////////////////////////////////////////////////////////////////////////////
 Parameters:
@@ -34,4 +36,4 @@ Parameters:
 /////////////////////////////////////////////////////////////////////////////
 Usage:
 
-./timecascades -i:mytest_sample.txt -o:output.txt -t:0.1
+./rsd -i:../email-Eu-core.txt -o:output.txt -t:0.1
